@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Snake v8</title>
+    <link rel="stylesheet" type="text/css" href="snake_game.css" />
+  </head>
+  <body>
+    
+    <div id="gameContainer"></div>
+
+    <div id="scoreContainer">
+      <div class="scoreBoard">Toit: <span id="pointsEarned">0</span></div>
+      <div class="scoreBoard">Mitu blokki liikunud: <span id="blocksTravelled">0</span></div>
+    </div>
+
+    <!-- #onScreenControllers contains the navigation buttons for mobile screens -->
+    <div id="onScreenControllers">
+      <button id="leftButton">◀️</button>
+      <div>
+        <button id="upButton">🔼</button>
+        <button id="downButton">🔽</button>
+      </div>
+      <button id="rightButton">▶️</button>
+    </div>
+  </body>
+
+  <!-- #Load our snake_game.js containing the game logic -->
+  <script src="snake_game.js"></script>
+</html>
